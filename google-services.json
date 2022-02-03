@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1094295705482",
+    "project_id": "reporting-app-f11cb",
+    "storage_bucket": "reporting-app-f11cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094295705482:android:4667a4b1261ec93d389a73",
+        "android_client_info": {
+          "package_name": "com.reporting_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094295705482-0lkbk5e1fd14f6ooei35434ncqf88hcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTLd3IS0a271yKUZn_8f4QtAqCmdmb3gk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094295705482-0lkbk5e1fd14f6ooei35434ncqf88hcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
