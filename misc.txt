@@ -1,30 +1,40 @@
-module.exports = {
-    root: true,
-    extends: ['@react-native-community', 'prettier'],
-    parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'import', 'react-hooks'],
-    overrides: [
-        {
-            files: ['*.ts', '*.tsx'],
-            extends: ['airbnb-typescript/base', 'prettier/@typescript-eslint'],
-            parserOptions: {
-                project: './tsconfig.json'
-            }
-        }
-    ],
-    rules: {
-        'import/extensions': [
-            'error',
-            'ignorePackages',
-            {
-                ts: 'never',
-                tsx: 'never',
-                js: 'never',
-                jsx: 'never'
-            }
-        ],
-        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-        'react-hooks/exhaustive-deps': 'warn' // Checks effect dependencies
-    }
-};
-
+{
+  "name": "reporting_app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@bugsnag/react-native": "^7.14.1",
+    "@react-native-firebase/analytics": "^14.1.0",
+    "@react-native-firebase/app": "^14.1.0",
+    "@react-native-firebase/crashlytics": "^14.1.0",
+    "@react-native-firebase/firestore": "^14.1.0",
+    "@react-native-firebase/remote-config": "^14.1.0",
+    "@react-native-firebase/storage": "^14.1.0",
+    "axios": "^0.24.0",
+    "firebase": "^9.6.1",
+    "react": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-fs": "^2.18.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@bugsnag/source-maps": "^2.3.0",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^27.4.2",
+    "eslint": "^8.4.1",
+    "jest": "^27.4.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
