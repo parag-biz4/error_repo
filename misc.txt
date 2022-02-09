@@ -1,40 +1,10 @@
-{
-  "name": "reporting_app",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint ."
-  },
-  "dependencies": {
-    "@bugsnag/react-native": "^7.14.1",
-    "@react-native-firebase/analytics": "^14.1.0",
-    "@react-native-firebase/app": "^14.1.0",
-    "@react-native-firebase/crashlytics": "^14.1.0",
-    "@react-native-firebase/firestore": "^14.1.0",
-    "@react-native-firebase/remote-config": "^14.1.0",
-    "@react-native-firebase/storage": "^14.1.0",
-    "axios": "^0.24.0",
-    "firebase": "^9.6.1",
-    "react": "17.0.2",
-    "react-native": "0.66.3",
-    "react-native-fs": "^2.18.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/runtime": "^7.16.3",
-    "@bugsnag/source-maps": "^2.3.0",
-    "@react-native-community/eslint-config": "^3.0.1",
-    "babel-jest": "^27.4.2",
-    "eslint": "^8.4.1",
-    "jest": "^27.4.3",
-    "metro-react-native-babel-preset": "^0.66.2",
-    "react-test-renderer": "17.0.2"
-  },
-  "jest": {
-    "preset": "react-native"
-  }
-}
+import React from "react";
+import { render, fireEvent, waitForElement } from "@testing-library/react";
+
+import LoginForm, { Props } from "../LoginForm";
+
+describe("<LoginForm />", () => {
+  test("should display a blank login form, with remember me checked by default", async () => {
+    // ???
+  });
+});
